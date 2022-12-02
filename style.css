@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&family=Yeseva+One&display=swap');
+
+html{
+    font-size: 10px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    color: #FFFFFF;
+}
+
+.title{
+    font-family: 'Yeseva One', cursive;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.subtitle{
+    font-family: 'Nunito Sans', sans-serif;;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.text-color{
+    color: #E3B873;
+}
+.content-container{
+    max-width: 87.5%;
+    margin: 0 auto;
+}
+.container {
+    display: flex;
+    align-items: center;
+}
+.flex{
+    display: flex;
+}
+.space{
+    justify-content: space-between;
+}
+.image-center{
+    display: block;
+    margin: 0 auto;
+}
+/*PROJECTS SECTION*/
+.projects-section{
+    background-color: #131313;
+}
+.project-content{
+    padding: 105px 43px 411px;
+}
+.projects-nav{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 50px;
+}
+.projects-nav-item{
+    margin-right: 60px;
+    color: rgba(255, 255, 255, 0.3);
+    align-items: flex-start;
+    font-size: 14px;
+    line-height: 19px;
+}
+.projects-nav-item:hover{
+    color: #E3B873;
+    border-bottom: #E3B873 solid 0.1rem;
+    padding-bottom: 7px;
+}
+.projects-list-wrapper{
+    margin-top: 50px;
+    margin-bottom: 55px;
+    flex-wrap: wrap;
+}
+.projects-list-container{
+    width: 40%;
+}
+.projects-list-wrapper div{
+    width: 191px;
+    margin-bottom: 30px;
+}
+.projects-text-title{
+    width: 50%;
+    text-align: left;
+    font-size: 2.7rem;
+    line-height: 3.7rem;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+}
+.project-text-subtitle{
+    width: 100%;
+    text-align: left;
+    margin-top: 24px;
+    font-size: 1.4rem;
+    line-height: 2.7rem;
+}
+.projects-image-mobile{
+    display: none;
+}
+.projects-list-text-title{
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}
+.projects-list-text-subtitle{
+    margin-top: 7px;
+    font-size: 1.3rem;
+    line-height: 2.1rem;
+}
+.nav-dot{
+    cursor: pointer;
+    margin: 0 8px;
+}
+.left-nav-arrow{
+    margin-right: 16px;
+}
+.right-nav-arrow{
+    margin-left: 16px;
+}
