@@ -1,10 +1,12 @@
+let imgNumber = 0;
+
 class CompleteProject {
-  constructor(city, aria, time, imgUrl, number) {
+  constructor(city, aria, time, imgUrl, id) {
     this.city = city;
     this.aria = aria;
     this.time = time;
     this.imgUrl = imgUrl;
-    this.number = number;
+    this.id = id;
   }
 }
 const admiral = new CompleteProject(
@@ -29,16 +31,8 @@ const patriotic = new CompleteProject(
   2
 );
 
-function switchCompleteProjects(obj) {
-  completeProjectImage.setAttribute("src", obj.imgUrl);
-  completeProjectName.innerHTML = obj.city;
-  completeProjectAria.textContent = obj.aria;
-  completeProjectTime.textContent = obj.time;
-  navigationDotsList.forEach((dot) => {
-    dot.src = "./img/svg/disactivNavigationDot.svg";
-  });
-  navigationDotsList[obj.number].src = "./img/svg/activeNavigationDot.svg";
-}
+const completeProjectsArr = [admiral, thieves, patriotic];
+console.log(completeProjectsArr);
 
 const completeProjectImage = document.querySelector(".projects-image-screen");
 const completeProjectName = document.querySelector("#complete-project-name");
@@ -48,6 +42,34 @@ const navigationDotsList = document.querySelectorAll(".nav-dot");
 const projectsListContainer = document.querySelector(".projects-nav");
 const navDots = document.querySelector(".nav-dots");
 const projectNavArrow = document.querySelector(".projects-nav-arrow");
+
+function switchCompleteProjects(obj) {
+  imgNumber = obj.id;
+  completeProjectImage.setAttribute("src", obj.imgUrl);
+  completeProjectName.innerHTML = obj.city;
+  completeProjectAria.textContent = obj.aria;
+  completeProjectTime.textContent = obj.time;
+  navigationDotsList.forEach((dot) => {
+    dot.src = "./img/svg/disactivNavigationDot.svg";
+  });
+  navigationDotsList[obj.id].src = "./img/svg/activeNavigationDot.svg";
+}
+
+function slideNextProject(number) {
+  let index;
+  number === completeProjectsArr.length - 1
+    ? (index = 0)
+    : (index = number + 1);
+  switchCompleteProjects(completeProjectsArr[index]);
+}
+function slidePreviusProject(number) {
+  let index;
+
+  number === 0
+    ? (index = completeProjectsArr.length - 1)
+    : (index = number - 1);
+  switchCompleteProjects(completeProjectsArr[index]);
+}
 
 projectsListContainer.addEventListener("click", (e) => {
   e.preventDefault();
@@ -84,10 +106,13 @@ navDots.addEventListener("click", (e) => {
     }
   }
 });
+
 projectNavArrow.addEventListener("click", (e) => {
   e.preventDefault();
   const isArrow = e.target.closest(".nav-arrow");
   if (isArrow) {
-    console.log(this.number);
+    isArrow.id === "right-nav-arrow"
+      ? slideNextProject(imgNumber)
+      : slidePreviusProject(imgNumber);
   }
 });
