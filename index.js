@@ -50,9 +50,9 @@ function switchCompleteProjects(obj) {
   completeProjectAria.textContent = obj.aria;
   completeProjectTime.textContent = obj.time;
   navigationDotsList.forEach((dot) => {
-    dot.src = "./img/svg/disactivNavigationDot.svg";
+    dot.src = "img/svg/disactivNavigationDot.svg";
   });
-  navigationDotsList[obj.id].src = "./img/svg/activeNavigationDot.svg";
+  navigationDotsList[obj.id].src = "img/svg/activeNavigationDot.svg";
 }
 
 function slideNextProject(number) {
