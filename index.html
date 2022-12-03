@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Slider on JavaScript</title>
+</head>
+<body>
+<main>
+    <section id="complete projects" class="projects-section">
+        <div class="project-content content-container">
+            <nav>
+                <ul class="projects-nav">
+                    <li><a id="project-nav-link-1" class="title projects-nav-item" href="#">Rostov-on-Don, Admiral</a></li>
+                    <li><a id="project-nav-link-2" class="title projects-nav-item" href="#">Sochi Thieves</a></li>
+                    <li><a id="project-nav-link-3" class="title projects-nav-item" href="#">Rostov-on-Don Patriotic</a></li>
+                </ul>
+            </nav>
+            <div class="projects-wrapper flex space">
+                <div class="projects-list-container">
+                    <p class="projects-text-title title text-color">
+                        Completed<br> projects
+                    </p>
+                    <p class="project-text-subtitle">
+                        Only a small part of the work performed by our company is presented
+                        on the site. For 14 years on in the construction
+                        market we have made happy more than 1000 families
+                    </p>
+                    <div class="flex projects-list-wrapper">
+                        <div>
+                            <p class="projects-list-text-title title text-color">city:</p>
+                            <p id="complete-project-name" class="projects-list-text-subtitle">Rostov-on-Don<br> LCD admiral</p>
+                        </div>
+                        <div>
+                            <p class="projects-list-text-title title text-color">apartment area:</p>
+                            <p id="complete-project-aria" class="projects-list-text-subtitle">81 m2</p>
+                        </div>
+                        <div>
+                            <p class="projects-list-text-title title text-color">repair time:</p>
+                            <p id="complete-project-time" class="projects-list-text-subtitle">3.5 months</p>
+                        </div>
+                        <div>
+                            <p class="projects-list-text-title title text-color">repair Cost:</p>
+                            <p class="projects-list-text-subtitle">Upon request</p>
+                        </div>
+                    </div>
+                    <div class="flex projects-nav-arrow">
+                        <img id="left-nav-arrow" class="left-nav-arrow nav-arrow" src="./img/svg/leftNavigationArrow.svg" alt="left navigation arrow">
+                        <div class="nav-dots">
+                            <img id=nav-dot-1 class="nav-dot" src="img/svg/activeNavigationDot.svg" alt="navigation dot">
+                            <img id=nav-dot-2 class="nav-dot" src="img/svg/disactivNavigationDot.svg" alt="navigation dot">
+                            <img id=nav-dot-3 class="nav-dot" src="img/svg/disactivNavigationDot.svg" alt="navigation dot">
+                        </div>
+                        <img id="right-nav-arrow" class="right-nav-arrow nav-arrow" src="./img/svg/rightNavigationArrow.svg" alt="right navigation arrow">
+                    </div>
+                </div>
+                <img class="projects-image-screen" src="img/interiorImageProjectsSection1.jpg" alt="interior image">
+            </div>
+        </div>
+    </section>
+</main>
+<script src="index.js"></script>
+</body>
+</html>
