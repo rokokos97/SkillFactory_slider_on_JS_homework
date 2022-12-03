@@ -10,7 +10,6 @@
 - CSS
 - JavaScript
 
-
 ### Student: Rostyslav Lisovyi
 
 ### Group: FR-81
@@ -18,9 +17,4 @@
 
 ## visit to slider page :
 
-[![Slider on JavaScript](https://cdn-icons-png.flaticon.com/512/3082/3082354.png)](https://rokokos97.github.io/SkillFactory_slider_on_JS_homework/)
-
-
-
-
-
+[Slider on JavaScript](https://rokokos97.github.io/SkillFactory_slider_on_JS_homework/)
