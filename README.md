@@ -10,10 +10,6 @@
 - CSS
 - JavaScript
 
-## Libraries:
-
-## API:
-
 ### Student: Rostyslav Lisovyi
 
 ### Group: FR-81
