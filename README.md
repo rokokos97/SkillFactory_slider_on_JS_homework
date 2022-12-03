@@ -10,16 +10,17 @@
 - CSS
 - JavaScript
 
-## Libraries:
-
-## API:
 
 ### Student: Rostyslav Lisovyi
 
 ### Group: FR-81
 ----
 
-## visit to my another repository:
+## visit to slider page :
+
+[![Slider on JavaScript]](https://rokokos97.github.io/SkillFactory_slider_on_JS_homework/)
+
+
 
 
 

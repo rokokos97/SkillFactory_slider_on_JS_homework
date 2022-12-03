@@ -123,3 +123,6 @@ html{
 .right-nav-arrow{
     margin-left: 16px;
 }
+.nav-arrow{
+    cursor: pointer;
+}
