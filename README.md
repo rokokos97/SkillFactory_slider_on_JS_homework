@@ -21,4 +21,4 @@
 
 ## visit to slider page :
 
-[![Slider on JavaScript](http://www.w3.org/2000/svg)](https://rokokos97.github.io/SkillFactory_slider_on_JS_homework/)
+[![Slider on JavaScript]](https://rokokos97.github.io/SkillFactory_slider_on_JS_homework/)
